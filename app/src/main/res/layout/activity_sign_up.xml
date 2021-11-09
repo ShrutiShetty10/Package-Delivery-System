@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/main_orange"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".SignUp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREATE ACCOUNT"
+        android:textAllCaps="true"
+        android:textSize="65dp"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/signup_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/fullname_icon"
+        android:hint="Enter Full Name"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/signup_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_email"
+        android:hint="Enter Email"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/signup_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/username_icon"
+        android:hint="Enter Username"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_lock_"
+        android:hint="Enter Password"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:onClick="callSignUp2"
+        android:layout_marginTop="30dp"
+        android:padding="20dp">
+
+    </Button>
+
+</LinearLayout>

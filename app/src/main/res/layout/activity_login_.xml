@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:shadowColor="#57000000"
+            android:text="Login as"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/warehouse_log"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="44dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/loginas_custombutton"
+            android:drawableEnd="@drawable/warehouseadmin"
+            android:drawablePadding="8dp"
+            android:paddingLeft="16dp"
+            android:paddingEnd="16dp"
+            android:text=" Warehouse Admin"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:onClick="callLoginWarehouse"/>
+
+        <Button
+            android:id="@+id/delivery_log"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/loginas_custombutton"
+            android:drawableEnd="@drawable/deliveryboyicon"
+            android:drawablePadding="16dp"
+            android:paddingEnd="16dp"
+            android:text="Delivery Person"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:onClick="callLoginDelivery"/>
+
+        <Button
+            android:id="@+id/user_log"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/loginas_custombutton"
+            android:drawableEnd="@drawable/usericon"
+            android:drawablePadding="16dp"
+            android:paddingEnd="16dp"
+            android:text="User"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:onClick="callLoginUser"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

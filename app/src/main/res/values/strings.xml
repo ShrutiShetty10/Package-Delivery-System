@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PackageDeliverySystem</string>
+    <string name="login"><u>I already have an account , login</u></string>
+    <string name="sign_text">Sign Up</string>
+    <string name="login_text">Login</string>
+</resources>

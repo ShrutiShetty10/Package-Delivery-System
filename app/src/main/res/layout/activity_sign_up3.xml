@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/main_orange"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".SignUp3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREATE ACCOUNT"
+        android:textAllCaps="true"
+        android:textSize="65dp"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/country_code_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showFlag="true"
+            app:ccp_showFullName="true"
+            app:ccp_showNameCode="true" />
+
+        <EditText
+            android:id="@+id/signup_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/country_code_picker"
+            android:drawableStart="@drawable/phoneno_icon"
+            android:hint="Enter Phone Number"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/signup_next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signup_phone_number"
+            android:layout_marginTop="30dp"
+            android:elevation="5dp"
+            android:onClick="callVerifyOTP"
+            android:text="Next" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
